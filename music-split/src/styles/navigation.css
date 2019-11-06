@@ -1,0 +1,10 @@
+.nav-bar {
+  display: flex;
+  justify-content: left;
+}
+
+.page-link {
+  background: transparent;
+  border: 0em;
+  margin: 0.5em;
+}
