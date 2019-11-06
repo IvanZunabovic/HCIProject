@@ -1,10 +1,11 @@
 .nav-bar {
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  background: #712727;
 }
 
 .page-link {
-  background: transparent;
-  border: 0em;
-  margin: 0.5em;
+  color: white;
+  margin: 0.5em 3%;
+  text-decoration: none;
 }

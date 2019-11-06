@@ -1,0 +1,13 @@
+body {
+  margin: 0em;
+}
+
+.cover-section {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  right: 15%;
+  top: 20%;
+}

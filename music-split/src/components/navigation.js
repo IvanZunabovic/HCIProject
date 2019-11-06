@@ -7,9 +7,9 @@ const Navigation = ({ menuItems }) => {
     <div className="nav-bar">
       {menuItems.map(({ path, text }) => {
         return (
-          <button className="page-link" key={path}>
-            <Link to={path}>{text}</Link>
-          </button>
+          <Link to={path} key={path} className="page-link">
+            {text}
+          </Link>
         )
       })}
     </div>

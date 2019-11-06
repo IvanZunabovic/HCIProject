@@ -1,12 +1,14 @@
 import React from "react"
-import BackgroundImage from "gatsby-background-image"
+import Img from "gatsby-image"
+import "../styles/cover.css"
 
 const Cover = ({ img, styleClass, title, children }) => {
   return (
-    <BackgroundImage className={styleClass} fluid={img}>
+    <div className="cover-section">
+      <Img fluid={img} alt="Cover image"></Img>
       <h1 className="title">{title}</h1>
       {children}
-    </BackgroundImage>
+    </div>
   )
 }
 
