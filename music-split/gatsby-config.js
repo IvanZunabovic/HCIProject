@@ -1,18 +1,38 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Music Split`,
+    description: `Music shop site for all music shops in Split`,
     author: `@gatsbyjs`,
     menuItems: [
       {
-        text : 'Products',
-        path : '/examples/products'
+        text: "Blog",
+        path: "/blog",
       },
       {
-        text : 'Page-2',
-        path : '/page-2'
-      }
-    ]
+        text: "Courses",
+        path: "/courses",
+      },
+      {
+        text: "Events",
+        path: "/events",
+      },
+      {
+        text: "Home",
+        path: "/",
+      },
+      {
+        text: "Log in",
+        path: "/login",
+      },
+      {
+        text: "Profile",
+        path: "/profile",
+      },
+      {
+        text: "Store",
+        path: "/store",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -34,7 +54,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: ``, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
