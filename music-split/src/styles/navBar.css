@@ -1,11 +1,15 @@
 .nav-bar {
+  position: relative;
   display: flex;
   justify-content: center;
   background: #712727;
+  max-width: 900;
 }
 
 .page-link {
   color: white;
-  margin: 0.5em 3%;
+  margin: 0.4em 3%;
   text-decoration: none;
+  font-size: 1.3em;
+  cursor: pointer;
 }

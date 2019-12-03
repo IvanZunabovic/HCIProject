@@ -7,7 +7,26 @@ body {
 }
 
 .title {
+  font-size: 8em;
+  color: white;
+  text-shadow: 3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin: 0.2em 0;
+}
+
+.about-label {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 2px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;
+}
+
+.cover-text {
   position: absolute;
-  right: 15%;
+  left: 10%;
   top: 20%;
+  right: 10%;
+  width: 40em;
+}
+
+.cover-image {
+  max-height: 40em;
 }

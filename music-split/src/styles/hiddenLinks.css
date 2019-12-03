@@ -1,0 +1,12 @@
+.hidden-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 45px;
+  right: 0;
+  background: #712727;
+}
+
+.page-link {
+  margin: 0.8em;
+}

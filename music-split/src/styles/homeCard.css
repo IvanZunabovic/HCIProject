@@ -1,0 +1,32 @@
+.card-image {
+  width: 20em;
+}
+
+.card-colored {
+  background: #e0e0e0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+
+.card {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-description {
+  margin: 0.9em 0;
+  font-size: 1.2em;
+}
+
+.info-title {
+  font-size: 1.5em;
+}

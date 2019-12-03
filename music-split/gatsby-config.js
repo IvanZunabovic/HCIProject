@@ -21,16 +21,16 @@ module.exports = {
         path: "/",
       },
       {
-        text: "Log in",
-        path: "/login",
-      },
-      {
         text: "Profile",
         path: "/profile",
       },
       {
         text: "Store",
         path: "/store",
+      },
+      {
+        text: "Log in",
+        path: "/login",
       },
     ],
   },

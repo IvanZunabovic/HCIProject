@@ -1,19 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
-import "../styles/navigation.css"
+import NavBar from "../components/navBar"
 
 const Navigation = ({ menuItems }) => {
-  return (
-    <div className="nav-bar">
-      {menuItems.map(({ path, text }) => {
-        return (
-          <Link to={path} key={path} className="page-link">
-            {text}
-          </Link>
-        )
-      })}
-    </div>
-  )
+  return <NavBar menuItems={menuItems}></NavBar>
 }
 
 export default Navigation
