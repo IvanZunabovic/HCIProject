@@ -1,6 +1,5 @@
 import React from "react"
 import Img from "gatsby-image"
-import "../styles/homeCard.css"
 
 const HomeCard = ({ img, text, title, cardClassName }) => {
   return (

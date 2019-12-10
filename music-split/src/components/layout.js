@@ -1,27 +1,27 @@
-import React from 'react';
-import { useStaticQuery, graphql } from "gatsby";
-import Navigation from './navigation';
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Navigation from "./navigation"
 
-const Layout = ({children}) => {
-    const data = useStaticQuery(graphql`
-        {
-            site(siteMetadata: {}) {
-                siteMetadata {
-                    menuItems {
-                        path
-                        text
-                    }
-                }
-            }
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    {
+      site(siteMetadata: {}) {
+        siteMetadata {
+          menuItems {
+            path
+            text
+          }
         }
-    `)
+      }
+    }
+  `)
 
-    return (
-        <div>
-            <Navigation menuItems={data.site.siteMetadata.menuItems}/>
-            {children}
-        </div>
-    );
-};
+  return (
+    <div className="layout">
+      <Navigation menuItems={data.site.siteMetadata.menuItems} />
+      {children}
+    </div>
+  )
+}
 
-export default Layout;
+export default Layout
