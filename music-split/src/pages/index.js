@@ -35,6 +35,18 @@ const IndexPage = ({ data }) => {
           leftArrow={leftArrowIcon}
           rightArrow={rightArrowIcon}
         ></Slider>
+        <label className="shops-container-title">Upcoming Events</label>
+        <Slider
+          sliderImgs={sliderImgArr}
+          leftArrow={leftArrowIcon}
+          rightArrow={rightArrowIcon}
+        ></Slider>
+        <label className="shops-container-title">Popular Courses</label>
+        <Slider
+          sliderImgs={sliderImgArr}
+          leftArrow={leftArrowIcon}
+          rightArrow={rightArrowIcon}
+        ></Slider>
         <Footer />
       </Layout>
     </div>

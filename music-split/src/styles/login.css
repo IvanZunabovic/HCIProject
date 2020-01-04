@@ -1,0 +1,76 @@
+.input-fields-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: inherit;
+  overflow: hidden;
+  top: 3em;
+  width: 450px;
+  height: min-content;
+  margin: 0 auto;
+  z-index: 1;
+  box-shadow: 0 0 1rem 0;
+  padding: 5em;
+}
+
+.input-fields-container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.input-fields {
+  display: flex;
+  padding: 1em;
+  margin: 0.5em 0;
+  width: -webkit-fill-available;
+}
+
+.button {
+  padding: 1em;
+  width: -webkit-fill-available;
+  margin: 0.5em 0;
+}
+
+.or-label {
+  margin: 1.5em;
+}
+
+.login-image {
+  width: 60%;
+  height: 40em;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.login-form {
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  background: url(https://images.unsplash.com/photo-1526142684086-7ebd69df27a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+    no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.new-account-label {
+  margin: 1.5em 0;
+  width: 50%;
+}
+
+.register-label {
+  text-decoration: none;
+  color: black;
+  margin-left: 0.5em;
+}
