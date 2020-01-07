@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../styles/HiddenLinks.css"
 
 const HiddenLinks = ({ menuItems }) => {
   return (
