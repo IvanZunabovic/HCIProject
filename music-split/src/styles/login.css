@@ -6,7 +6,7 @@
   position: relative;
   background: inherit;
   overflow: hidden;
-  top: 3em;
+  top: 4em;
   width: 450px;
   height: min-content;
   margin: 0 auto;
@@ -29,20 +29,66 @@
 }
 
 .input-fields {
+  background: transparent;
   display: flex;
   padding: 1em;
-  margin: 0.5em 0;
+  margin: 1em 5em;
   width: -webkit-fill-available;
+  font-weight: bolder;
+  border-color: gray;
+}
+
+.input-fields::placeholder {
+  font-size: 1.09em;
+  color: #696969;
 }
 
 .button {
-  padding: 1em;
+  cursor: pointer;
+  background: #712727;
+  border-color: #712727;
+  padding: 0.6em;
   width: -webkit-fill-available;
-  margin: 0.5em 0;
+  margin: 1em 3.7em;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.button:hover {
 }
 
 .or-label {
-  margin: 1.5em;
+  color: #00000087;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+.google-button {
+  cursor: pointer;
+  display: flex;
+  width: -webkit-fill-available;
+  margin: 1em 4.2em;
+  background: white;
+  box-shadow: 1.5px 2.5px 1px gray;
+  padding: 0.6em 0.8em;
+}
+
+.google-logo {
+  width: 1.5em;
+}
+
+.google-sign-in-text {
+  align-self: center;
+  justify-self: center;
+  margin: 0 2em;
+  font-size: 1.1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bolder;
+  color: #00000087;
+  padding: 0 0.35em;
 }
 
 .login-image {
@@ -65,12 +111,17 @@
 }
 
 .new-account-label {
-  margin: 1.5em 0;
+  margin-top: 2em;
   width: 50%;
+  width: -webkit-fill-available;
+  margin: 2em 4em 0;
+  text-align: center;
 }
 
 .register-label {
   text-decoration: none;
   color: black;
   margin-left: 0.5em;
+  font-weight: bolder;
+  text-shadow: 4px 2px 8px black;
 }

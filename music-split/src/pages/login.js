@@ -4,8 +4,6 @@ import InputFields from "../components/inputFields"
 import Footer from "../components/footer"
 import Img from "gatsby-image"
 import "../styles/login.css"
-import GoogleButton from "react-google-button"
-import FacebookLogin from "react-facebook-login"
 
 const Login = ({ data }) => {
   const { fluid } = data.backgroundImage.childImageSharp
@@ -13,17 +11,13 @@ const Login = ({ data }) => {
     <Layout className="layout">
       <div className="login-form">
         <InputFields>
-          <button className="button">Confirm</button>
+          <button className="button">Sign in</button>
           <label className="or-label">or</label>
-          <GoogleButton
-            type="light"
-            className="google-button"
-            style={{ width: "-webkit-fill-available", border: "none" }}
-          />
-          <FacebookLogin
-            className="facebook-button"
-            style={{ width: "-webkit-fill-available", border: "none" }}
-          />
+          <div className="google-button">
+            <Img fluid={fluid} className="google-logo" />
+            <label className="google-sign-in-text">Sign in with Google</label>
+          </div>
+
           <label className="new-account-label">
             Don't have account?{" "}
             <a href="../register" className="register-label">
@@ -41,7 +35,7 @@ export default Login
 
 export const query = graphql`
   query {
-    backgroundImage: file(relativePath: { eq: "login-image.jpg" }) {
+    backgroundImage: file(relativePath: { eq: "google-sign-logo.png" }) {
       childImageSharp {
         fluid(quality: 100) {
           ...GatsbyImageSharpFluid

@@ -29,6 +29,7 @@
   display: flex;
   justify-content: center;
   background: #712727;
+  padding: 0.3em;
 }
 
 .footer-label {

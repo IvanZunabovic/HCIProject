@@ -1,0 +1,86 @@
+.profile-photo {
+  border-radius: 5em;
+  width: 5em;
+  margin: 0.25em;
+}
+
+.user-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.information-overview {
+  display: flex;
+  flex-direction: column;
+  margin: 0.25em;
+}
+
+.user-name {
+  margin: 0.15em;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.user-email {
+  margin: 0.15em;
+}
+
+.manage-information-title {
+  font-size: 1.4em;
+  font-weight: bolder;
+  margin: 0.25em;
+}
+
+.terms-and-service-label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 26.7em;
+  margin: 0.25em;
+}
+
+.profile-settings-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  background: #f5f5f5;
+}
+
+.user-info-field {
+  display: flex;
+  flex-direction: column;
+  max-width: 15em;
+  margin: 1em;
+}
+
+.user-info-description {
+  font-size: 1.1em;
+  font-weight: bolder;
+  margin: 0.25em;
+}
+
+.user-info {
+  font-size: 0.8em;
+  margin: 0.25em;
+}
+
+.personal-info {
+  justify-content: space-evenly;
+  padding: 2em;
+}
+
+.details-type-label {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+.info-settings {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
