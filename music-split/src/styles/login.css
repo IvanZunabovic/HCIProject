@@ -55,9 +55,6 @@
   font-size: 1.1em;
 }
 
-.button:hover {
-}
-
 .or-label {
   color: #00000087;
   font-size: 1.3em;
@@ -124,4 +121,5 @@
   margin-left: 0.5em;
   font-weight: bolder;
   text-shadow: 4px 2px 8px black;
+  cursor: pointer;
 }

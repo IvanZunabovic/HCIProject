@@ -35,6 +35,29 @@ module.exports = {
         path: "/login",
       },
     ],
+    users: [
+      {
+        name: "Ivan",
+        lastName: "Žunabović",
+        email: "ivan.zunabovic1234@gmail.com",
+        passwordSHA:
+          "b94d17169d6c21026fc5f843a90f5e7db2d25ca8f8b1bbb298e6bf0c7c93e6f6",
+      },
+      {
+        name: "Sandro",
+        lastName: "Jažo",
+        email: "sandro.jazo@gmail.com",
+        passwordSHA:
+          "6938dfa81059b11f2517ea09329886b51b3861a4d5b20c4d468a83625617b062",
+      },
+      {
+        name: "Jure",
+        lastName: "Jurić",
+        email: "jure.juric@gmail.com",
+        passwordSHA:
+          "cf0a4bab6cb2aa99465b288e9dbb498503133fb142651e524a3d2c3fad76c99d",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

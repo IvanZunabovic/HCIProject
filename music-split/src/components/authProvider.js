@@ -1,17 +1,30 @@
 import React, { Component } from "react"
 
+export const AuthContext = React.createContext({
+  name: "",
+  lastName: "",
+  email: "",
+  logedIn: false,
+})
+
 class AuthProvider extends Component {
-  userState = {
-    name: "not signed in",
-    lastName: "",
-    email: "",
-    logedIn: null,
+  constructor(props) {
+    super(props)
+    this.currentUser = {
+      name: "",
+      lastName: "",
+      email: "",
+      logedIn: false,
+    }
   }
 
   render() {
-    return <div>{this.props.children}</div>
+    return (
+      <AuthContext.Provider value={this.currentUser}>
+        {this.props.children}
+      </AuthContext.Provider>
+    )
   }
 }
 
-export const AuthContext = React.createContext()
 export default AuthProvider
