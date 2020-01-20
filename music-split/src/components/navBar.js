@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import "../styles/navBar.css"
 import HiddenLinks from "../components/hiddenLinks"
 
-const storage = ""
+let storage = ""
 
 if (typeof window !== "undefined") {
   storage = localStorage
