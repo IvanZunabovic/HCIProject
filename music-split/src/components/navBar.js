@@ -3,12 +3,18 @@ import { Link } from "gatsby"
 import "../styles/navBar.css"
 import HiddenLinks from "../components/hiddenLinks"
 
-const storage = localStorage
+const storage = ""
+
+if (typeof window !== "undefined") {
+  storage = localStorage
+}
 
 const NavBar = ({ menuItems }) => {
   const signOut = e => {
-    localStorage.removeItem("token")
-    e.target.innerHTML = "Log in"
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("token")
+      e.target.innerHTML = "Log in"
+    }
   }
 
   return (
@@ -20,7 +26,7 @@ const NavBar = ({ menuItems }) => {
           </Link>
         )
       })}
-      {storage.getItem("token") ? (
+      {typeof window !== "undefined" && storage.getItem("token") ? (
         <Link
           to="/login"
           key="/signout"
