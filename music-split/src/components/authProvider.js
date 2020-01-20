@@ -1,29 +1,31 @@
 import React, { Component } from "react"
 
-export const AuthContext = React.createContext({
-  name: "",
-  lastName: "",
-  email: "",
-  logedIn: false,
-})
-
 class AuthProvider extends Component {
+  static state
   constructor(props) {
     super(props)
-    this.currentUser = {
+    this.state = {
       name: "",
       lastName: "",
       email: "",
-      logedIn: false,
+      loggedIn: false,
     }
   }
 
+  changeUser = loggedUser => {
+    this.setState(loggedUser)
+  }
+
+  componentDidUpdate() {
+    console.log("Auth state: ", this.state)
+  }
+
+  displayUserInfo = () => {
+    this.props.getUserInfo(this.state)
+  }
+
   render() {
-    return (
-      <AuthContext.Provider value={this.currentUser}>
-        {this.props.children}
-      </AuthContext.Provider>
-    )
+    return <>{this.props.children}</>
   }
 }
 

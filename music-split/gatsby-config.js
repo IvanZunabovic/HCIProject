@@ -30,10 +30,6 @@ module.exports = {
         text: "Store",
         path: "/store",
       },
-      {
-        text: "Log in",
-        path: "/login",
-      },
     ],
     users: [
       {
@@ -41,14 +37,14 @@ module.exports = {
         lastName: "Žunabović",
         email: "ivan.zunabovic1234@gmail.com",
         passwordSHA:
-          "b94d17169d6c21026fc5f843a90f5e7db2d25ca8f8b1bbb298e6bf0c7c93e6f6",
+          "5d64e3e14b692ade369b9cc4f80dd84cadc9b93fed60611f31dffedf82fa2f2f",
       },
       {
         name: "Sandro",
         lastName: "Jažo",
         email: "sandro.jazo@gmail.com",
         passwordSHA:
-          "6938dfa81059b11f2517ea09329886b51b3861a4d5b20c4d468a83625617b062",
+          "6c9fbed6653e602ca49f72ca7925fcf264ddec4495a3ef2db9cb9c73e9f11000",
       },
       {
         name: "Jure",

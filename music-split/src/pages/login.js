@@ -5,10 +5,12 @@ import InputFields from "../components/inputFields"
 import Footer from "../components/footer"
 import Img from "gatsby-image"
 import "../styles/login.css"
+import sha256 from "crypto-js/sha256"
 
 const Login = ({ data }) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+
   const { fluid } = data.backgroundImage.childImageSharp
   const { users } = data.usersMetadata.siteMetadata
 
@@ -18,15 +20,29 @@ const Login = ({ data }) => {
 
   const handleLogin = event => {
     event.preventDefault()
-    alert("Loged in")
+
+    const currentUser = users.filter(user => {
+      return user.email === email ? user : null
+    })
+
+    if (
+      currentUser.length &&
+      currentUser[0].passwordSHA === sha256(password).toString()
+    ) {
+      const pageLinks = document.querySelectorAll(".page-link")
+      pageLinks[pageLinks.length - 1].innerHTML = "Sign out"
+
+      localStorage.setItem("token", JSON.stringify(currentUser[0]))
+      window.location.replace("/")
+    }
   }
 
-  const onEmailFieldChanged = e => {
-    setEmail(e.target.value)
+  const onEmailFieldChanged = newEmailValue => {
+    setEmail(newEmailValue)
   }
 
-  const onPasswordFieldChanged = e => {
-    setPassword(e.target.value)
+  const onPasswordFieldChanged = newPasswordValue => {
+    setPassword(newPasswordValue)
   }
 
   return (
@@ -76,6 +92,8 @@ export const query = graphql`
     usersMetadata: site {
       siteMetadata {
         users {
+          name
+          lastName
           email
           passwordSHA
         }

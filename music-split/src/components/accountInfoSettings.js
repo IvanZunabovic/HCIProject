@@ -1,24 +1,24 @@
 import React from "react"
 import EditUserInfo from "../components/editUserInfo"
 
-const AccountInfoSettings = () => {
+const AccountInfoSettings = ({ user }) => {
   return (
     <div className="info-settings">
       <div className="personal-info">
         <label className="details-type-label">Personal Info</label>
         <EditUserInfo
           userInfoDescription="Full Name"
-          userInfo="Ivan Žunabović"
+          userInfo={`${user.name} ${user.lastName}`}
         />
-        <EditUserInfo userInfoDescription="Initials" userInfo="IŽ" />
+        <EditUserInfo
+          userInfoDescription="Initials"
+          userInfo={`${user.name[0] + user.lastName[0]}`}
+        />
         <EditUserInfo
           userInfoDescription="User Name"
-          userInfo="@ivanzunabovic"
+          userInfo={`${user.email.replace("@gmail.com", "")}`}
         />
-        <EditUserInfo
-          userInfoDescription="Address"
-          userInfo="Put Salduna I 63, Trogir"
-        />
+        <EditUserInfo userInfoDescription="Address" userInfo="Not Set" />
       </div>
       <div className="personal-info">
         <label className="details-type-label">Payments</label>
