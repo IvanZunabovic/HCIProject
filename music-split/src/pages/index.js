@@ -29,24 +29,28 @@ const IndexPage = ({ data }) => {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           cardClassName="card"
         />
-        <label className="shops-container-title">Shops</label>
-        <Slider
-          sliderImgs={sliderImgArr}
-          leftArrow={leftArrowIcon}
-          rightArrow={rightArrowIcon}
-        ></Slider>
-        <label className="shops-container-title">Upcoming Events</label>
-        <Slider
-          sliderImgs={sliderImgArr}
-          leftArrow={leftArrowIcon}
-          rightArrow={rightArrowIcon}
-        ></Slider>
-        <label className="shops-container-title">Popular Courses</label>
-        <Slider
-          sliderImgs={sliderImgArr}
-          leftArrow={leftArrowIcon}
-          rightArrow={rightArrowIcon}
-        ></Slider>
+        <div className="slider-container">
+          <label className="shops-container-title">Shops</label>
+          <Slider
+            sliderImgs={sliderImgArr}
+            leftArrow={leftArrowIcon}
+            rightArrow={rightArrowIcon}
+          ></Slider>
+          <label className="shops-container-title middle-slider-title">
+            Upcoming Events
+          </label>
+          <Slider
+            sliderImgs={sliderImgArr}
+            leftArrow={leftArrowIcon}
+            rightArrow={rightArrowIcon}
+          ></Slider>
+          <label className="shops-container-title">Popular Courses</label>
+          <Slider
+            sliderImgs={sliderImgArr}
+            leftArrow={leftArrowIcon}
+            rightArrow={rightArrowIcon}
+          ></Slider>
+        </div>
         <Footer />
       </Layout>
     </div>

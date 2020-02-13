@@ -11,14 +11,6 @@ module.exports = {
         path: "/",
       },
       {
-        text: "Profile",
-        path: "/profile",
-      },
-      {
-        text: "Blog",
-        path: "/blog",
-      },
-      {
         text: "Courses",
         path: "/courses",
       },
@@ -29,6 +21,18 @@ module.exports = {
       {
         text: "Store",
         path: "/store",
+      },
+      {
+        text: "Blog",
+        path: "/blog",
+      },
+      {
+        text: "Profile",
+        path: "/profile",
+      },
+      {
+        text: "Login",
+        path: "/login",
       },
     ],
     users: [
@@ -50,6 +54,13 @@ module.exports = {
         name: "Jure",
         lastName: "Jurić",
         email: "jure.juric@gmail.com",
+        passwordSHA:
+          "cf0a4bab6cb2aa99465b288e9dbb498503133fb142651e524a3d2c3fad76c99d",
+      },
+      {
+        name: "User",
+        lastName: "User",
+        email: "user.user@gmail.com",
         passwordSHA:
           "cf0a4bab6cb2aa99465b288e9dbb498503133fb142651e524a3d2c3fad76c99d",
       },

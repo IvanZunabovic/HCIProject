@@ -6,8 +6,9 @@
   position: relative;
   background: inherit;
   overflow: hidden;
-  top: 3em;
-  width: 450px;
+  top: 8%;
+  width: 50%;
+  max-width: 450px;
   height: min-content;
   margin: 0 auto;
   z-index: 1;
@@ -106,7 +107,7 @@
 }
 
 .login-form {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   position: relative;
   justify-content: flex-end;
@@ -154,4 +155,18 @@
   position: relative;
   width: -webkit-fill-available;
   margin: 0em 4.1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .error-label-div {
+    margin: 0em 2em;
+  }
+
+  .button {
+    margin: 1.5em 1.8em 1em;
+  }
+
+  .google-button {
+    margin: 1em 2em;
+  }
 }

@@ -28,7 +28,11 @@ const Profile = ({ data }) => {
     <Layout>
       <UserData fluid={fluid} user={currentUser} />
       <ProfileTerms>
-        <img src={settingsSVG} className="profile-settings-img" />
+        <img
+          src={settingsSVG}
+          className="profile-settings-img"
+          alt="profile img"
+        />
       </ProfileTerms>
       <AccountInfoSettings user={currentUser} />
       <Footer />

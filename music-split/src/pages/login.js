@@ -25,6 +25,8 @@ const Login = ({ data }) => {
       return user.email === email ? user : null
     })
 
+    console.log(sha256(password).toString())
+
     if (
       currentUser.length &&
       currentUser[0].passwordSHA === sha256(password).toString()

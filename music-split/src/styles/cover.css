@@ -24,9 +24,31 @@ body {
   left: 10%;
   top: 20%;
   right: 10%;
-  width: 40em;
+  width: 70%;
 }
 
 .cover-image {
   max-height: 40em;
+}
+
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 5em;
+  }
+
+  .about-label {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-label {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 4em;
+  }
 }

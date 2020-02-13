@@ -31,12 +31,13 @@
   font-size: 1.4em;
   font-weight: bolder;
   margin: 0.25em;
+  text-align: center;
 }
 
 .terms-and-service-label {
   display: flex;
   flex-wrap: wrap;
-  width: 26.7em;
+  max-width: 26.7em;
   margin: 0.25em;
   text-align: center;
 }
@@ -84,6 +85,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .profile-settings-img {

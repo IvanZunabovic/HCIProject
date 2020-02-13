@@ -13,3 +13,26 @@
   font-size: 1.3em;
   cursor: pointer;
 }
+
+.hidden-links {
+  position: absolute;
+  right: 0;
+  top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background: #712727;
+  z-index: 10;
+  border-top: 2px solid #561f06;
+}
+
+.links-container {
+  position: relative;
+}
+
+.more-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+}
