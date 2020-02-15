@@ -19,7 +19,7 @@ const Slider = ({ sliderImgs, leftArrow, rightArrow }) => {
                 : "shop-image"
             }
           >
-            <label className="shop-name">Shop</label>
+            <label className="store-name">Shop</label>
           </SliderImage>
         )
       })}

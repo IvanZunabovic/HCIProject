@@ -1,12 +1,23 @@
-import React from 'react';
-import Layout from '../components/layout';
+import React from "react"
+import Layout from "../components/layout"
+import SearchBar from "../components/searchBar"
 
 const Courses = () => {
-    return (
-        <Layout>
-            <h1>Courses</h1>
-        </Layout>
-    );
-};
+  return (
+    <Layout>
+      <SearchBar />
+    </Layout>
+  )
+}
 
-export default Courses;
+const Filter = ({ filterName }) => {
+  return (
+    <label class="checkbox-label">
+      {filterName}
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+    </label>
+  )
+}
+
+export default Courses

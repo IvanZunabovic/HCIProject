@@ -57,7 +57,7 @@
   justify-content: center;
 }
 
-.shop-name {
+.store-name {
   align-self: center;
 }
 
@@ -79,6 +79,15 @@
   cursor: pointer;
   position: absolute;
   z-index: 1;
+}
+.slider-element:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 .left-arrow {
