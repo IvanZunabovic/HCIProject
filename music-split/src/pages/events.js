@@ -5,8 +5,10 @@ import SearchBar from "../components/searchBar"
 import GenreFilter from "../components/genreFilter"
 import Footer from "../components/footer"
 import "../styles/events.css"
+import "../styles/searchBar.css"
 import filledStar from "../images/filled-star.svg"
 import cart from "../images/cart.svg"
+import { graphql } from "gatsby"
 
 const FilterBox = () => {
   const dateOptionClick = () => {

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SearchBar from "../components/searchBar"
+import "../styles/searchBar.css"
 
 const Courses = () => {
   return (

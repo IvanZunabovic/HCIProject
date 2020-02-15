@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import GenreCard from "../components/genreCard"
 import bluesSvg from "../images/blues-genre.svg"
 import classicSvg from "../images/classical-genre.svg"
