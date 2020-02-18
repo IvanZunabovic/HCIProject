@@ -23,7 +23,7 @@ const NavBar = ({ menuItems }) => {
     const navLinks = document.querySelectorAll(".page-link")
     navLinks.forEach(link => {
       link.innerHTML === "Profile" &&
-      window !== "undefined" &&
+      typeof window !== "undefined" &&
       !localStorage.getItem("token")
         ? link.classList.add("hidden")
         : link.classList.add("visible")

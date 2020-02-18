@@ -5,8 +5,16 @@ import star from "../images/star.svg"
 import filledStar from "../images/filled-star.svg"
 
 const ShopCard = ({ imageFluid, shopName }) => {
+  const redirect = () => {
+    window.location.replace("/no1MusicShop")
+  }
+
+  const dummy = () => {}
   return (
-    <div className="shop-card">
+    <div
+      className="shop-card"
+      onClick={shopName == "Shop No1" ? redirect : dummy}
+    >
       <Img fluid={imageFluid} />
       <div className="shop-description">
         <label className="shop-name">{shopName}</label>
