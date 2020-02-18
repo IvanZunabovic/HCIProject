@@ -10,7 +10,7 @@
 
 .store-cover-label {
   position: absolute;
-  top: 45%;
+  top: 20vw;
   left: 20%;
   right: 20%;
   color: white;
@@ -34,7 +34,7 @@
   margin: 0.25em;
   font-weight: bold;
   align-self: flex-start;
-  font-size: 1.2em;
+  font-size: 1.6vw;
   text-shadow: 2px 2px 2px gray;
 }
 
@@ -45,7 +45,7 @@
   position: absolute;
   bottom: 0;
   width: -webkit-fill-available;
-  height: 20%;
+  height: 5vw;
   background: rgba(27, 27, 27, 0.65);
   padding: 1em;
   overflow: hidden;
@@ -67,6 +67,42 @@
 
 .star {
   width: 1.5em;
-  height: 1.5em;
+  height: 1.8vw;
   margin: 0.15em;
+}
+
+@media only screen and (max-width: 830px) {
+  .shop-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .store-cover-container {
+    height: 70vw;
+  }
+
+  .shop-name {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+
+  .shop-description {
+    height: 3em;
+  }
+
+  .star {
+    height: 1.4em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .shop-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 460px) {
+  .store-cover-label {
+    font-size: 2em;
+  }
 }

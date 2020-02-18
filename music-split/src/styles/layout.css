@@ -1,0 +1,16 @@
+.layout {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 4em;
+}
+
+body {
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

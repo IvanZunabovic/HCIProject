@@ -42,6 +42,7 @@ const GenreFilter = () => {
       }
     }
   `)
+
   return (
     <div className="genre-filter">
       {data.genreBackgrounds.edges.map((edge, index) => {

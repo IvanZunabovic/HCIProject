@@ -138,10 +138,6 @@
   border-color: #ff1d1d;
 }
 
-.hidden {
-  display: none;
-}
-
 .error-label {
   align-self: flex-start;
   margin-left: 0.5em;
@@ -157,6 +153,24 @@
   margin: 0em 4.1em;
 }
 
+@media only screen and (max-width: 860px) {
+  .input-fields-container:before {
+    width: -webkit-fill-available;
+  }
+  .input-fields-container {
+    width: -webkit-fill-available;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .input-fields-container:before {
+    filter: blur(7px);
+  }
+  .input-fields-container {
+    top: 0em;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .error-label-div {
     margin: 0em 2em;
@@ -168,5 +182,44 @@
 
   .google-button {
     margin: 1em 2em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .google-sign-in-text {
+    margin-right: 0em;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .google-sign-in-text {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .google-button {
+    margin: 1em 0em;
+  }
+
+  #sign-in-button {
+    margin: 1.5em 0;
+  }
+
+  .error-label-div {
+    margin: 0em;
+  }
+
+  .new-account-label {
+    margin: 2em 0em 0em;
+  }
+
+  .google-sign-in-text {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .input-fields-container {
+    padding: 5em 3em;
   }
 }

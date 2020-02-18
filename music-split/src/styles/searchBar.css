@@ -4,6 +4,10 @@
   margin-left: 0.25em;
 }
 
+.search-icon:hover {
+  cursor: pointer;
+}
+
 .search-bar {
   background: #712727;
   width: 920px;

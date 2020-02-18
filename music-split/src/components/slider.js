@@ -2,11 +2,11 @@ import React from "react"
 import SliderImage from "./sliderImage"
 import Img from "gatsby-image"
 
-const Slider = ({ sliderImgs, leftArrow, rightArrow }) => {
+const Slider = ({ sliderImgs, leftArrow, rightArrow, labels }) => {
   return (
     <div className="slider">
       <Img fluid={leftArrow} className="arrow left-arrow" />
-      {sliderImgs.map(element => {
+      {sliderImgs.map((element, index) => {
         const { fluid } = element.node.childImageSharp
         return (
           <SliderImage
@@ -19,7 +19,7 @@ const Slider = ({ sliderImgs, leftArrow, rightArrow }) => {
                 : "shop-image"
             }
           >
-            <label className="store-name">Shop</label>
+            <label className="store-name">{labels[index]}</label>
           </SliderImage>
         )
       })}

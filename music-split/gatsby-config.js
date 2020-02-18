@@ -34,6 +34,10 @@ module.exports = {
         text: "Login",
         path: "/login",
       },
+      {
+        text: "Cart",
+        path: "/",
+      },
     ],
     users: [
       {
@@ -105,6 +109,273 @@ module.exports = {
         description:
           "The Eric Clapton World Tour 2020 is a concert tour by British rock and blues guitarist and singer Eric Clapton",
         price: "650 Kn",
+      },
+    ],
+    coursesInfo: [
+      {
+        tags: "Vocal, Guitar, Bass, Drums, Keys",
+        title: "Rock music lessons",
+        author: "Tim Morello",
+        description:
+          "Vocals, Guitar, Bass, Drums, Keys…. These are the basic elements of rock and roll music! They provide the power, energy and lift to all your favorite rock and roll songs. At Musicology Performance Center we take our Rock instruments seriously.",
+        price: "150 Kn",
+      },
+      {
+        tags: "Piano",
+        title: "Piano lessons",
+        author: "Dora Matić",
+        description:
+          "Piano is the most popular instrument being studied at Musicology. Whether you are looking to learn classical or jazz piano or simply want to learn to play to accompany singing we have the right teacher for you! From beginner to expert, our teachers can help you get the most out of the piano.",
+        price: "100 Kn",
+      },
+      {
+        tags: "Sax, Trombone, French horn",
+        title: "Brass & woodwind lessons",
+        author: "Tina Franić",
+        description:
+          "Brass and woodwinds instrument lessons are incredibly popular at Musicology. Sax, Trombone and French horn can be always heard in our lesson rooms. Whether you want to learn to improvise on the saxophone or learn to play the trumpet Musicology can provide you with the right teacher to meet your goals.",
+        price: "90 Kn",
+      },
+      {
+        tags: "Vocal",
+        title: "Vocal lessons",
+        author: "Marin Marić",
+        description:
+          "At Musicology Performance Center we help our students find their voice. Whether you love pop, rock, opera or musical theater vocal lessons at Musicology will help you gain the skill and the confidence you need to put on a great performance.",
+        price: "120 Kn",
+      },
+      {
+        tags: "Violin, viola, cello, double bass",
+        title: "String lessons",
+        author: "Mateo Ković",
+        description:
+          "The sound of a violin can speak directly to the soul. Violas, Cellos and double bass can create an entire musical landscape in the form classical music to movie scores. Musicology offer lessons and ensemble for every orchestral instrument from classically trained teachers.",
+        price: "120 Kn",
+      },
+    ],
+    userReviews: [
+      {
+        userName: "Davor Trst",
+        userReview: "Prihvatljive cijene i prilično dobra ponuda",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Mate Matić",
+        userReview:
+          "Usluga i kvaliteta na najvišoj razini. Ljubaznost za sve pohvale, a ponuda extra",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Damir Damirić",
+        userReview:
+          "Apsolutna katastrofa. Odnos prodavač - kupac, 0 bodova. Nakon što sam zamolio gospodina mogu li probati gitaru iz višeg cjenovnog ranga dočekalo me pitanje mislim li kupiti instrument.Kada sam iskreno odgovorio da trenutno ne mislim kupiti instrument, pogotovo ne bez probe istog dočekao me govor o tome kako se takav instrument ne daje na probu, kako takav instrument kupuju ljudi koji ne žele da je instrument diran, kako on zbog ovakvih kao ja gubi novac, kako on taj posao radi već trideset godina i da ga neću ja poslu učiti itd., sve to uz povišen ton i obraćanje s ti i sl.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+        ],
+      },
+      {
+        userName: "Joe Lipski",
+        userReview:
+          "Main item in order was cancelled after it was paid for - Improve you stock accuracy!",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+          "https://img.icons8.com/color/48/000000/star--v1.png",
+        ],
+      },
+      {
+        userName: "John Johnson",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Marino Marić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Toni Ilić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Mario Marić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Matko Milić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Toni Kajić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Marina Ivić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Matea Kuštra",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Anton Bilić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Dario Darić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Maja Majić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Teofil Draković",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Tino Mraković",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Matea Izabelić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Tarik Tariković",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
+      },
+      {
+        userName: "Ivano Ivić",
+        userReview: "Indeed the Best Service around.",
+        userStars: [
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+          "https://img.icons8.com/color/48/000000/filled-star.png",
+        ],
       },
     ],
   },

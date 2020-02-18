@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

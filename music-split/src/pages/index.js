@@ -7,10 +7,22 @@ import "../styles/index.css"
 import Footer from "../components/footer"
 import Slider from "../components/slider"
 
+const shops = ["Music Max", "No1 Shop", "Muziker", "Franz Music", "Music Shop"]
+const events = ["Daughtry", "RHCP", "Foo Fighters", "Prljavci", "Eric Clapton"]
+const courses = [
+  "Guitar lesson",
+  "Piano lesson",
+  "Brass lesson",
+  "Vocal lesson",
+  "String lesson",
+]
+
 const IndexPage = ({ data }) => {
   const { fluid: coverImg } = data.coverImage.childImageSharp
   const { fluid: aboutImg } = data.cardImage.childImageSharp
   const { edges: sliderImgArr } = data.sliderImages
+  const { edges: concertImagesArr } = data.concertImages
+  const { edges: coursesImagesArr } = data.coursesImages
   const { fluid: leftArrowIcon } = data.leftArrowIcon.childImageSharp
   const { fluid: rightArrowIcon } = data.rightArrowIcon.childImageSharp
 
@@ -35,20 +47,23 @@ const IndexPage = ({ data }) => {
             sliderImgs={sliderImgArr}
             leftArrow={leftArrowIcon}
             rightArrow={rightArrowIcon}
+            labels={shops}
           ></Slider>
           <label className="shops-container-title middle-slider-title">
             Upcoming Events
           </label>
           <Slider
-            sliderImgs={sliderImgArr}
+            sliderImgs={concertImagesArr}
             leftArrow={leftArrowIcon}
             rightArrow={rightArrowIcon}
+            labels={events}
           ></Slider>
           <label className="shops-container-title">Popular Courses</label>
           <Slider
-            sliderImgs={sliderImgArr}
+            sliderImgs={coursesImagesArr}
             leftArrow={leftArrowIcon}
             rightArrow={rightArrowIcon}
+            labels={courses}
           ></Slider>
         </div>
         <Footer />
@@ -85,6 +100,31 @@ export const query = graphql`
         }
       }
     }
+
+    concertImages: allFile(filter: { relativePath: { regex: "/concert/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+
+    coursesImages: allFile(filter: { relativePath: { regex: "/lesson/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+
     leftArrowIcon: file(relativePath: { eq: "left-arrow.png" }) {
       childImageSharp {
         fluid(quality: 100) {

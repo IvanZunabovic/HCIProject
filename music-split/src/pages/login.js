@@ -29,13 +29,15 @@ const Login = ({ data }) => {
 
     if (
       currentUser.length &&
-      currentUser[0].passwordSHA === sha256(password).toString()
+      currentUser[0].passwordSHA.localeCompare(sha256(password).toString())
     ) {
       const pageLinks = document.querySelectorAll(".page-link")
-      pageLinks[pageLinks.length - 1].innerHTML = "Sign out"
+      pageLinks[pageLinks.length - 2].innerHTML = "Sign out"
 
       localStorage.setItem("token", JSON.stringify(currentUser[0]))
       window.location.replace("/")
+    } else {
+      alert("Wrong email or password")
     }
   }
 
@@ -56,6 +58,7 @@ const Login = ({ data }) => {
         >
           <button
             className="button"
+            id="sign-in-button"
             onClick={handleLogin}
             disabled={!valdiateForm()}
           >

@@ -50,6 +50,8 @@
 }
 
 .slider-element {
+  padding: 0.5em;
+  box-shadow: 1px 1px 4px gray;
   display: flex;
   flex-direction: column;
   width: 18%;
@@ -59,12 +61,13 @@
 
 .store-name {
   align-self: center;
+  margin: 0.25em;
 }
 
 .shops-container-title {
   align-self: center;
   font-size: 2.5em;
-  width: 100%;
+  width: -webkit-fill-available;
   text-align: center;
   margin: 2%;
 }
@@ -98,12 +101,18 @@
   right: 15%;
 }
 
+.shop-image {
+  height: 7em;
+}
+
 .shop-image-gray div {
+  height: 7em;
   background-color: lightgray;
   mix-blend-mode: soft-light;
 }
 
 .shop-image-gray picture img {
+  height: 7em;
   background-color: lightgray;
   mix-blend-mode: soft-light;
 }
@@ -140,5 +149,8 @@
 @media only screen and (max-width: 450px) {
   .card-image {
     display: none;
+  }
+  .title {
+    font-size: 3em;
   }
 }

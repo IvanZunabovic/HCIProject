@@ -1,4 +1,4 @@
-import { useRef, useState, useLayoutEffect, useEffect } from "react"
+import { useState, useLayoutEffect } from "react"
 
 const getElementMargin = el => {
   const style = window.getComputedStyle(el)
@@ -34,9 +34,6 @@ export const useResponsiveMenu = ({
       const items = containerRef.current.children
       // We assume menu items to share the same margins
       const itemMargin = getElementMargin(items[0])
-
-      const { offsetWidth: lastItemWidth } = items[items.length - 1]
-      const canLastItemFit = lastItemWidth <= spaceForMoreLink ? true : false
 
       const menuResult = Array.from(items).reduce(
         (result, menuItem, index) => {

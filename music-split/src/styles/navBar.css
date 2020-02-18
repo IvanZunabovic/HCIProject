@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #712727;
   max-width: 900;
 }
@@ -35,4 +36,9 @@
   right: 20px;
   top: 20px;
   color: white;
+}
+
+.cart-image {
+  height: 1.5em;
+  margin: 0;
 }
