@@ -38,7 +38,7 @@ const NavBar = ({ menuItems }) => {
         {menu.visibleItems.map(({ path, text }) => {
           return text !== "Cart" ? (
             text === "Login" &&
-            window !== "undefined" &&
+            typeof window !== "undefined" &&
             localStorage.getItem("token") ? (
               <Link
                 to={path}

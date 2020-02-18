@@ -73,7 +73,7 @@ const Blog = ({ data }) => {
   const { userReviews } = data.userReviewsArr.siteMetadata
 
   useEffect(() => {
-    if (window !== "undefined" && !localStorage.getItem("token")) {
+    if (typeof window !== "undefined" && !localStorage.getItem("token")) {
       document.querySelector(".input-container").classList.add("hidden")
     }
   }, [])

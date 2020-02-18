@@ -14,7 +14,7 @@ const HiddenLinks = ({ menuItems }) => {
     <div className="hidden-links">
       {menuItems.map(({ path, text }) => {
         return text === "Login" &&
-          window !== "undefined" &&
+          typeof window !== "undefined" &&
           localStorage.getItem("token") ? (
           <Link
             to={"/login"}
@@ -25,7 +25,7 @@ const HiddenLinks = ({ menuItems }) => {
             Sign Out
           </Link>
         ) : text === "Profile" &&
-          window !== "undefined" &&
+          typeof window !== "undefined" &&
           !localStorage.getItem("token") ? (
           ""
         ) : (
