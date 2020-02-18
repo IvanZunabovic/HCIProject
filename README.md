@@ -15,3 +15,7 @@
 ## High-fidelity prototip
 
 High-fidelity prototip se nalazi na linku: https://www.figma.com/file/160h9bvGC3FofdrGErD2x7/Untitled?node-id=0%3A1
+
+## Link stranice
+
+https://music-split.netlify.com/
