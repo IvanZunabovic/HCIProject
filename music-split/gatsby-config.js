@@ -39,34 +39,15 @@ module.exports = {
         path: "/",
       },
     ],
+
+    //Hardcoded values just for representational purpose
     users: [
       {
         name: "Ivan",
-        lastName: "Žunabović",
-        email: "ivan.zunabovic1234@gmail.com",
+        lastName: "Ivic",
+        email: "ivan.ivic@gmail.com",
         passwordSHA:
-          "5d64e3e14b692ade369b9cc4f80dd84cadc9b93fed60611f31dffedf82fa2f2f",
-      },
-      {
-        name: "Sandro",
-        lastName: "Jažo",
-        email: "sandro.jazo@gmail.com",
-        passwordSHA:
-          "6c9fbed6653e602ca49f72ca7925fcf264ddec4495a3ef2db9cb9c73e9f11000",
-      },
-      {
-        name: "Jure",
-        lastName: "Jurić",
-        email: "jure.juric@gmail.com",
-        passwordSHA:
-          "cf0a4bab6cb2aa99465b288e9dbb498503133fb142651e524a3d2c3fad76c99d",
-      },
-      {
-        name: "User",
-        lastName: "User",
-        email: "user.user@gmail.com",
-        passwordSHA:
-          "cf0a4bab6cb2aa99465b288e9dbb498503133fb142651e524a3d2c3fad76c99d",
+          "893a4fbf23185fef7ea9ca4ca269ad3e8a060e75c96b6d93d4bf7434c6491fd8", //SHA256 hash value of password
       },
     ],
     eventInfo: [
